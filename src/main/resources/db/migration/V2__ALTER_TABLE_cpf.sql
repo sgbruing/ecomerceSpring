@@ -1,0 +1,5 @@
+UPDATE client
+SET cpf = ''
+WHERE cpf IS NULL;
+ALTER TABLE client
+    ALTER COLUMN cpf SET NOT NULL;
